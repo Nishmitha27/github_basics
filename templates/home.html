@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance Management System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    min-height:100vh;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#facc15;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:85vh;
+    padding:0 8%;
+}
+
+.hero-content{
+    max-width:550px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:30px;
+    color:#e5e7eb;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:#facc15;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.hero-image{
+    width:450px;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:20px;
+}
+
+.stat-box{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.stat-box h2{
+    font-size:28px;
+    color:#facc15;
+}
+
+.features{
+    background:white;
+    color:#111827;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.features h2{
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature h3{
+    margin-bottom:15px;
+    color:#4f46e5;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+}
+
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+        padding:50px 8%;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .hero-image{
+        width:100%;
+        max-width:400px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">📋 AttendTrack</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Smart Attendance Management System</h1>
+
+        <p>
+            Simplify attendance tracking for schools, colleges, and
+            organizations. Monitor records, generate reports, and manage
+            attendance efficiently from anywhere.
+        </p>
+
+        <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <div class="hero-image">
+        <div class="card">
+            <h2>Today's Attendance</h2>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <h2>95%</h2>
+                    <p>Present</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>5%</h2>
+                    <p>Absent</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>1200</h2>
+                    <p>Students</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>45</h2>
+                    <p>Classes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Why Choose Us?</h2>
+
+    <div class="feature-grid">
+        <div class="feature">
+            <h3>📊 Real-Time Tracking</h3>
+            <p>Monitor attendance instantly with live updates.</p>
+        </div>
+
+        <div class="feature">
+            <h3>📈 Analytics & Reports</h3>
+            <p>Generate detailed attendance reports in seconds.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🔒 Secure Data</h3>
+            <p>Keep attendance records protected with secure storage.</p>
+        </div>
+
+        <div class="feature">
+            <h3>☁ Cloud Access</h3>
+            <p>Access attendance records anytime, anywhere.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AttendTrack | Attendance Management System</p>
+</footer>
+
+</body>
+</html>
